@@ -1,0 +1,25 @@
+/* Only adjust the two rows when GhostPen is present. */
+@media (max-width: 768px) {
+  #ghostpen_bar:has(#leftSendForm) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #ghostpen_bar > #leftSendForm {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    order: 1 !important;
+  }
+  #ghostpen_bar > .gpen-icon {
+    order: 2 !important;
+    margin-left: auto !important;
+  }
+  #nonQRFormItems {
+    min-width: 0 !important;
+  }
+  #send_textarea {
+    min-width: 0 !important;
+  }
+}
